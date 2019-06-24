@@ -33,6 +33,9 @@ const SkillsBox = () => (
         <h4 style={{ color: 'white', marginTop: 0 }}>Frontend</h4>
         <ul>
           <SkillEntry>
+            <b>Typescript</b> and latest <b>Javascript</b> features
+          </SkillEntry>
+          <SkillEntry>
             Practical knowledge of <b>React</b>, <b>Angular</b> and their
             ecosystems
           </SkillEntry>
@@ -43,8 +46,19 @@ const SkillsBox = () => (
       </div>
       <div style={{ flex: 1 }}>
         <h4 style={{ color: 'white', marginTop: 0 }}>Backend</h4>
+        <ul>
+          <SkillEntry>
+            <b>Microservices</b> and <b>GraphQL servers</b> using Java, Kotlin
+            and Go
+          </SkillEntry>
+          <SkillEntry>
+            Practical knowledge of <b>Spring</b>, <b>Ktor</b>,{' '}
+            <b>Java GraphQL</b> and <b>Gqlgen</b>
+          </SkillEntry>
+        </ul>
       </div>
     </div>
+    <button className={style.SkillsButton}>Favorite tooling</button>
   </div>
 );
 
@@ -54,6 +68,10 @@ const Home = () => (
     <div style={{ display: 'flex', width: '100%' }}>
       <InfoBox />
       <SkillsBox />
+    </div>
+
+    <div>
+      <h2>Latest Blog Entries</h2>
     </div>
   </Layout>
 );

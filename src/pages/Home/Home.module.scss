@@ -16,3 +16,21 @@
     }
   }
 }
+
+.SkillsButton {
+  margin-top: space(3);
+  background: none;
+  border-radius: 4px;
+  // border: 2px solid color(primary, 500);
+  border: 2px solid color(grey, 0);
+  color: color(grey, 0);
+  padding: space(3);
+  width: 100%;
+  transition: 150ms;
+
+  &:hover {
+    cursor: pointer;
+    background: rgba(color(primary, 500), 0.1);
+    border: 2px solid color(primary, 500);
+  }
+}
