@@ -1,36 +1,24 @@
 import { Link } from 'gatsby';
 import React from 'react';
+import { FaCode } from 'react-icons/fa';
+import styles from './Header.module.scss';
 
 type HeaderProps = {
   siteTitle: string;
 };
 
 const Header: React.FC<HeaderProps> = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+  <header className={styles.Header}>
+    <Link to="/" className={styles.Home}>
+      <FaCode />
+      Creoi.dev
+    </Link>
+    <nav className={styles.Navigation}>
+      <Link to="/">Code</Link>
+      <Link to="/">Skills</Link>
+      <Link to="/">Blog</Link>
+      <Link to="/">About</Link>
+    </nav>
   </header>
 );
 

@@ -1,0 +1,25 @@
+@import '../../style/variables';
+
+.Header {
+  padding-top: space(4);
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+
+  .Navigation {
+    display: flex;
+  }
+
+  a {
+    padding: space(4);
+  }
+
+  .Home {
+    display: flex;
+    align-items: center;
+    & > svg {
+      font-size: 24px;
+      margin-right: space(3);
+    }
+  }
+}

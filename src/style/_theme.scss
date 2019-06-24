@@ -1,0 +1,31 @@
+@import './variables';
+
+body {
+  background-color: color(grey, 500);
+  color: color(grey, 0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: color(primary, 400);
+}
+
+a {
+  text-shadow: none;
+  color: color(grey, 0);
+  background-image: none;
+  transition: 150ms;
+
+  font-weight: 700;
+
+  &:hover {
+    color: color(primary, 400);
+    background-color: rgba(color(primary, 300), 0.1);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

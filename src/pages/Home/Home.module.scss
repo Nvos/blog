@@ -1,0 +1,18 @@
+@import '../../style/variables';
+
+.Personal {
+}
+
+.Skills {
+  ul {
+    margin: 0;
+    li {
+      display: flex;
+      list-style-type: none;
+      svg {
+        color: color(primary, 500);
+        margin-right: space(3);
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+$palette: (
+  primary: (
+    0: #ffebee,
+    100: #ffcdd2,
+    200: #ef9a9a,
+    300: #e57373,
+    400: #ef5350,
+    500: #f44336,
+  ),
+  grey: (
+    0: rgba(255, 255, 255, 0.88),
+    400: #353535,
+    500: #282828,
+  ),
+);
+
+$space: (
+  0: 0px,
+  1: 2px,
+  2: 4px,
+  3: 8px,
+  4: 16px,
+  5: 32px,
+);
+
+@function space($value) {
+  @warn map-get($space, $value);
+
+  @if map-has-key($space, $value) {
+    @return map-get($space, $value);
+  }
+
+  @warn "unknown space `#{$value}` in $space";
+  @return null;
+}
+
+@function color($color, $tone) {
+  @warn map-get($palette,$color);
+
+  @if map-has-key($palette, $color) {
+    $color: map-get($palette, $color);
+
+    @if map-has-key($color, $tone) {
+      $tone: map-get($color, $tone);
+      @return $tone;
+    }
+
+    @warn "unknown tone `#{$tone}` in color";
+    @return null;
+  }
+
+  @warn "unknown color `#{$color}` in palette";
+  @return null;
+}
