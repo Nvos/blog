@@ -1,0 +1,41 @@
+@import '../../style/variables';
+
+.BottomNavbar {
+  padding: space(2);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: none;
+  background-color: #1b1b1b;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.75);
+
+  & > .Icon {
+    flex: 1;
+    padding: space(2);
+    background: none;
+    border: none;
+    color: color(grey, 0);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    transition: 150ms;
+
+    & > svg {
+      font-size: 20px;
+      margin-bottom: space(2);
+    }
+
+    &:hover {
+      color: color(primary, 400);
+      background-color: rgba(color(primary, 300), 0.1);
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

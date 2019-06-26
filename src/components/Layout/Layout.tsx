@@ -1,6 +1,6 @@
 import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
-import { Footer, Header } from '..';
+import { BottomNavbar, Footer, Header } from '..';
 import styles from './Layout.module.scss';
 
 const Layout: React.FC = ({ children }) => (
@@ -23,6 +23,7 @@ const Layout: React.FC = ({ children }) => (
           <div className={styles.Spacer} />
           <Footer />
         </div>
+        <BottomNavbar />
       </React.Fragment>
     )}
   />

@@ -4,6 +4,10 @@
   text-align: center;
   padding: space(4);
 
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 56px;
+  }
+
   .Copyright {
   }
 }

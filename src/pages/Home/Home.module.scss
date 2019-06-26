@@ -1,6 +1,7 @@
 @import '../../style/variables';
 
-.Personal {
+h2 {
+  margin-top: 0;
 }
 
 .Skills {
@@ -21,7 +22,6 @@
   margin-top: space(3);
   background: none;
   border-radius: 4px;
-  // border: 2px solid color(primary, 500);
   border: 2px solid color(grey, 0);
   color: color(grey, 0);
   padding: space(3);
@@ -31,6 +31,7 @@
   &:hover {
     cursor: pointer;
     background: rgba(color(primary, 500), 0.1);
+    color: color(primary, 400);
     border: 2px solid color(primary, 500);
   }
 }

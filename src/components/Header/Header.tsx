@@ -14,7 +14,6 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => (
       Creoi.dev
     </Link>
     <nav className={styles.Navigation}>
-      <Link to="/">Code</Link>
       <Link to="/">Skills</Link>
       <Link to="/">Blog</Link>
       <Link to="/">About</Link>
